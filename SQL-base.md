@@ -144,7 +144,7 @@ CREATE TABLE Clienti (
 ```
 
 ## Inserimenti: come si eseguono
-> L'istruzione INSERT INTO viene utilizzata per inserire nuovi record in una tabella. Nel primo esempio, inserisco solo i valori per le colonne specificate; nel secondo esempio, inserisco i valori di TUTTE le colonne presenti. Se le colonne non sono state dichiarate NULL, ovvero possono contenere valori nulli, allora è obbligatorio inserire dei valori quando inserisco una riga.
+> L'istruzione INSERT INTO viene utilizzata per inserire nuovi record in una tabella. Nel primo esempio, inserisco solo i valori per le colonne specificate; nel secondo esempio, inserisco i valori di TUTTE le colonne presenti. Se le colonne non sono state dichiarate NULL, ovvero possono contenere valori nulli, allora è obbligatorio inserire dei valori quando inserisco una riga. **Importante**: se è stata definita una primary key su un attributo, questo non va specificato nell'inserimento; sarà il DBMS stesso a occuparsene.
 
 ```
 INSERT INTO Clienti (Cognome, Nome, Indirizzo)
