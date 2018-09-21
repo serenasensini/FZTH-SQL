@@ -179,8 +179,9 @@ WHERE ClienteID = 1;
 - [x] il ; alla fine dei vari statements non è obbligatorio; tuttavia, è necessario in caso di più istruzioni (statements) eseguite insieme;
 
 ##  Q&A
-- [x] conosci MySQL? Sì/no, ma conosco (anche) SQLServer, DB2, ecc;
-- [x] Qual è la differenza tra un database relazione e non? In un caso, rappresento i miei dati tramite tabelle formate da tuple e che hanno relazioni tra loro; in un altro caso, ho un formato di rappresentazione di dati più simile a Json.
+- [x] Conosci MySQL? Sì/no, ma conosco (anche) SQLServer, DB2, ecc;
+- [x] Qual è la differenza tra un database relazione e non? In un caso, rappresento i miei dati tramite tabelle formate da tuple e che hanno relazioni tra loro; in un altro caso, ho un formato di rappresentazione di dati più simile a Json;
+- [x] Cosa succede se eseguo `DELETE TABLE Clienti` ? Viene cancellato il **contenuto** della tabella, ma non la tabella stessa. Con DROP, anche la tabella viene eliminata.
 
 > Per approfondire: https://www.w3schools.com/sql/default.asp
 
