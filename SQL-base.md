@@ -98,7 +98,7 @@ SELECT DISTINCT nome FROM Clienti;
 SELECT * FROM Clienti WHERE nome = 'Marco' AND cognome = 'Rossi' ;
 ```
 
-## Order by: cos'è e a cosa serve
+## ORDER BY: cos'è e a cosa serve
 
 > La parola chiave ORDER BY viene utilizzata per ordinare il set di risultati in ordine crescente o decrescente. La parola chiave ORDER BY ordina i record in ordine crescente (ASC) per default. Per ordinare i record in ordine decrescente, utilizzare la parola chiave DESC.
 
@@ -106,7 +106,7 @@ SELECT * FROM Clienti WHERE nome = 'Marco' AND cognome = 'Rossi' ;
 SELECT * FROM Clienti ORDER BY nome ;
 ```
 
-## Join: cos'è e a cosa serve
+## JOIN: cos'è e a cosa serve
 
 > Una clausola JOIN viene utilizzata per combinare righe da due o più tabelle, in base a una colonna correlata tra di esse. Ne esistono tre tipi: INNER JOIN, che seleziona i record che matchano in entrambe le tabelle, LEFT JOIN che restituisce tutti i record dalla tabella di sinistra e i record corrispondenti dalla tabella di destra. Il risultato è NULL dal lato destro, se non c'è corrispondenza, RIGHT JOIN che restituisce tutti i record dalla tabella di destra e i record corrispondenti dalla tabella sinistra. Il risultato è NULL dal lato sinistro, quando non c'è corrispondenza.
 ```
