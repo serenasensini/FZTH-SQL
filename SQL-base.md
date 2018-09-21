@@ -5,7 +5,7 @@ Breve tutorial su SQL.
 
 > SQL è un linguaggio fondamentale per la creazione di database relazionali.
 
-## Cos'è un database relazionale
+## Cos'è un database relazionale (RDBMS)
 
 > La struttura fondamentale del modello relazionale e’ appunto la **relazione**, cioe’ una tabella costituita da __righe__
 (tuple) e __colonne__ (attributi). Le relazioni rappresentano le entità che si ritiene essere interessanti nel database. 
@@ -100,7 +100,7 @@ SELECT * FROM Clienti WHERE nome = 'Marco' AND cognome = 'Rossi' ;
 
 ## Order by: cos'è e a cosa serve
 
-> La parola chiave ORDER BY viene utilizzata per ordinare il set di risultati in ordine crescente o decrescente. La parola chiave ORDER BY ordina i record in ordine crescente per default. Per ordinare i record in ordine decrescente, utilizzare la parola chiave DESC.
+> La parola chiave ORDER BY viene utilizzata per ordinare il set di risultati in ordine crescente o decrescente. La parola chiave ORDER BY ordina i record in ordine crescente (ASC) per default. Per ordinare i record in ordine decrescente, utilizzare la parola chiave DESC.
 
 ```
 SELECT * FROM Clienti ORDER BY nome ;
@@ -143,7 +143,44 @@ CREATE TABLE Clienti (
 );
 ```
 
+## Inserimenti: come si eseguono
+> L'istruzione INSERT INTO viene utilizzata per inserire nuovi record in una tabella. Nel primo esempio, inserisco solo i valori per le colonne specificate; nel secondo esempio, inserisco i valori di TUTTE le colonne presenti. Se le colonne non sono state dichiarate NULL, ovvero possono contenere valori nulli, allora è obbligatorio inserire dei valori quando inserisco una riga.
+
+```
+INSERT INTO Clienti (Cognome, Nome, Indirizzo)
+VALUES (value1, value2, value3);
+
+INSERT INTO Clienti
+VALUES (value1, value2, value3, ...);
+```
+
+## Aggiornamenti: come si eseguono
+> L'istruzione UPDATE viene utilizzata per modificare i record esistenti in una tabella. Se la condizione non fosse verificata, l'update non verrà eseguito.
+
+```
+UPDATE Clienti
+SET Cognome = "Rossi"
+WHERE ClienteID = 1;
+```
+
+## Cancellazioni: come si eseguono
+> L'istruzione DELETE viene utilizzata per eliminare i record esistenti in una tabella. Se la condizione non fosse verificata, il delete non verrà eseguito.
+
+```
+DELETE FROM Clienti
+WHERE ClienteID = 1;
+```
+
 ## Gestione delle date
 
->  DATE - format YYYY-MM-DD; DATETIME - format: YYYY-MM-DD HH:MI:SS; TIMESTAMP - format: YYYY-MM-DD HH:MI:SS
+>  DATE - format YYYY-MM-DD; DATETIME - format: YYYY-MM-DD HH:mm:SS
+
+## Tips
+- [x] il ; alla fine dei vari statements non è obbligatorio; tuttavia, è necessario in caso di più istruzioni (statements) eseguite insieme;
+
+##  Q&A
+- [x] conosci MySQL? Sì/no, ma conosco (anche) SQLServer, DB2, ecc;
+- [x] Qual è la differenza tra un database relazione e non? In un caso, rappresento i miei dati tramite tabelle formate da tuple e che hanno relazioni tra loro; in un altro caso, ho un formato di rappresentazione di dati più simile a Json.
+
+> Per approfondire: https://www.w3schools.com/sql/default.asp
 
