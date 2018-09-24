@@ -49,7 +49,7 @@ CREATE TABLE Clienti (
     Cognome varchar(255),
     Nome varchar(255),
     Indirizzo varchar(255),
-    Città varchar(255),    
+    Città varchar(255)
 );
 ```
 
