@@ -1,4 +1,4 @@
-# Tutorial per usare Hibernate (framework Java per la persistenza)
+# Tutorial per usare Hibernate
 
 > Disclaimer: il tutorial usa Eclipse(2018) come IDE, ma è valido anche per altri ambienti di sviluppo. Stesso vale per il DBMS: viene utilizzato PostgreSQL (4.2), ma si può applicare a qualunque DBMS. Si presuppone che quindi le ultime versioni di questo siano già installate prima dell'inizio del tutorial.
 
@@ -72,6 +72,8 @@ A questo punto, nella classe Utente andiamo ad aggiungere le seguenti annotazion
 - @Id: è un'annotazione specifica per l'attributo (o gli) che sono chiavi primarie nella tabella;
 - @GeneratedValue(strategy=GenerationType.IDENTITY): specifica il tipo di chiave utilizzata; in questo caso, abbia una chiave che si autoincrementa autonomamente.
 
+Per fare questo, andremo ad utilizzare la libreria presente a questo (link)[], che dev'essere inclusa nel progetto. Per includere una libreria nel progetto, è sufficiente cliccare con il tasto destro sul nome del progetto in Eclipse, andare su "Properties", cliccare su Java Build Path/Libraries e cliccare su "Add external Jar". Una volta caricata, per aggiornare il file se ancora vi dovessero essere errori di import, è sufficiente premere Ctrl+Maiusc+O.
+
 La classe viene quindi così modificata:
 
 ```
@@ -95,29 +97,15 @@ public class Utente {
 	public String citta;
   @Column(name="ID_AVVISO")
 	public int telefono;
-	
-	/*E' fondamentale che ogni attributo presente abbia il suo getter e setter con lo stesso
-	 * IDENTICO nome dell'attributo presente come variabile globale.
-	 * esempio:
-	 * getCOGNOME: sbagliato
-	 * getCog: sbagliato
-	 * getCognome: corretto
-	 * */
-	public int getIdUtente() {
-		return idUtente;
-	}
-	public void setIdUtente(int idUtente) {
-		this.idUtente = idUtente;
-	}
 	...		
 }
 
 ```
 
-
-> Per il codice completo, vedi files: Animale, AnimaleDAO
+> Per il codice completo, vedi files: Utente, UtenteDAO
 
 ## Tips
 - [X] Cos'è il modello MVC? Vedi (link) [https://it.wikipedia.org/wiki/Model-view-controller]
 - [X] Cos'è il modello ORM? Vedi (link)[https://it.wikipedia.org/wiki/Object-relational_mapping]
 - [X] Cosa uso per far dialogare il mio database con l'applicazione Java? Un driver ad hoc per il tipo di database; i principali (ultime versioni) sono MYSQL [driver](https://dev.mysql.com/downloads/connector/j/5.1.html), PostgreSQL (driver)[https://jdbc.postgresql.org/download.html], SQL Server (driver)[https://www.microsoft.com/it-it/download/details.aspx?id=11774], DB2 (driver)[http://www-01.ibm.com/support/docview.wss?uid=swg21363866]
+- [X] Come faccio a rendere una parola tutta in maiuscolo tramite shortcut? Ctrl+Maiusc+X (maiuscolo), Ctrl+Maiusc+Y (minuscolo).
