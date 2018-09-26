@@ -1,12 +1,14 @@
 # Tutorial per usare Hibernate
 
-> Disclaimer: il tutorial usa Eclipse(2018) come IDE, ma è valido anche per altri ambienti di sviluppo. Stesso vale per il DBMS: viene utilizzato PostgreSQL (4.2), ma si può applicare a qualunque DBMS. Si presuppone che quindi le ultime versioni di questo siano già installate prima dell'inizio del tutorial.
+> Disclaimer: il tutorial usa MySQL come DBMS, ma si può applicare a qualunque DBMS. Si presuppone che quindi le ultime versioni di questo siano già installate prima dell'inizio del tutorial.
 
 ## Cos'è [?](https://hibernate.org/)
 Si tratta di un framework che fornisce un servizio di Object-relational mapping (ORM) ovvero gestisce la persistenza dei dati sul database attraverso la rappresentazione e il mantenimento su database relazionale di un sistema di oggetti Java.
 
 ## Come funziona
 Dovendo mappare una certa entità Java con un'entità presente nel database, si può ricorrere ad un framework come Hibernate per la realizzazione del mapping: la gestione della persistenza dell'oggetto viene completamente gestita da quest'ultimo che, tramite determinate annotazioni all'interno delle classi Java, è in grado di "mappare" e lavorare con gli oggetti presenti all'interno di un certo database. 
+
+[Link tutorial](https://www.tutorialspoint.com/hibernate/pdf/hibernate_quick_guide.pdf)
 
 ![Schema](https://www.tutorialspoint.com/hibernate/images/hibernate_high_level.jpg)
 
@@ -101,8 +103,6 @@ public class Utente {
 }
 
 ```
-
-> Per il codice completo, vedi files: Utente, UtenteDAO
 
 ## Tips
 - [X] Cos'è il modello MVC? Vedi (link) [https://it.wikipedia.org/wiki/Model-view-controller]
