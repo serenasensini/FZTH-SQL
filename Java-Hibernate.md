@@ -44,14 +44,6 @@ public class Utente {
 
 ```
 
-Nel progetto avremo anche un file chiamato "UtenteDAO" che si occuperà di gestire le transazioni sull'entità Utente, per ora così fatta:
-
-```
-public class UtenteDAO {
-
-}
-```
-
 Nel database andremo a creare una tabella così fatta:
 
 ```
