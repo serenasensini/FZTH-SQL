@@ -3,7 +3,7 @@
 ## Cosa sono
 
 Il termine è usato per descrivere l'occorrenza di eventi che alterano il normale flusso di esecuzione di un programma. 
-Esempi: NullPointerException, FileNotFoundException, ArrayIndexOutOfBoundsException...
+Esempi: __NullPointerException__, __FileNotFoundException__, __IndexOutOfBoundsException__...
 
 ## Come gestirle
 
@@ -51,5 +51,5 @@ public class MiaEccezione extends Exception{
 
 ## Tips
 - [X] E' possibile gestire più eccezioni per uno stesso blocco? Sì, usando un sistema try/catch con catch multipli.
-- [X] Che differenza c'è tra le eccezioni "checked" e "unchecked"? Le eccezioni "checked" sono ad esempio le eccezioni derivanti da Exception; in poche parole sono quelle che il programmatore è obbligato a gestire. Le eccezioni "unchecked" sono spesso difficile da catturare; un esempio sono NullPointerException o IndexOutOfBoundException.
+- [X] Che differenza c'è tra le eccezioni "checked" e "unchecked"? Le eccezioni "checked" sono ad esempio le eccezioni derivanti da Exception; in poche parole sono quelle che il programmatore è obbligato a gestire. Le eccezioni "unchecked" sono spesso difficile da catturare; un esempio sono __NullPointerException__ o __IndexOutOfBoundException__.
 - [X] Perché gestire le eccezioni? Per usare un approccio del tipo "defensive programming": riporto le situazioni di errore in modo ordinato, cercando di far eseguire al meglio le attività affidate al programma.
