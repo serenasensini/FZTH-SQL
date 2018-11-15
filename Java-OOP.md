@@ -1,19 +1,19 @@
 # Java_Tutorial
 
 ## Classe
-Una classe è il prototipo (l'astrazione) di un oggetto in cui vengono definiti tutti gli attributi e le azioni che l'oggetto sarà in grado di compiere. Gli attributi possono essere di qualunque tipo di oggetto. Infatti, si dice che una classe  descrive un insieme di oggetti caratterizzati dallo stesso insieme di:
-- azioni possibili (metodi);
-- proprietà possibili (attributi o campi).
+Una __classe__ è il prototipo (l'astrazione) di un oggetto in cui vengono definiti tutti gli attributi e le azioni che l'oggetto sarà in grado di compiere. Gli attributi possono essere di qualunque tipo di oggetto. Infatti, si dice che una classe  descrive un insieme di oggetti caratterizzati dallo stesso insieme di:
+- azioni possibili (__metodi__);
+- proprietà possibili (__attributi o campi__).
 
 ## Oggetto
-Un oggetto di un tipo A ha:
+Un __oggetto__ di un tipo A ha:
 - uno stato descritto dai valori che attribuisce alle variabili dichiarate come attributi della sua classe
 - un comportamento dato dalle funzioni definite come metodi della sua classe
-- una identita', che rimane anche quando cambia stato, cioe' quando cambiano i valori alle variabili
-L'identita' di un oggetto è la posizione di memoria dove l'oggetto è memorizzato.
+- una identita', che rimane anche quando cambia stato, cioè quando cambiano i valori alle variabili
+L'identità di un oggetto è la posizione di memoria dove l'oggetto è memorizzato.
 
 ## Classe vs. Oggetto
-Nella terminologia della programmazione orientata agli oggetti, una classe è un modello per la definizione di oggetti. Specifica i nomi e i tipi di variabili che possono esistere in un oggetto, così come i metodi. Una classe può essere pensata come un "tipo", con gli oggetti come una "variabile" di quel tipo. Si dice che una classe viene "istanziata" e un oggetto "creato" o "inizializzato".
+Nella terminologia della __programmazione orientata agli oggetti(OOP)__, una __classe__ è un modello per la definizione di oggetti. Specifica i nomi e i tipi di variabili che possono esistere in un oggetto, così come i metodi. Una classe può essere pensata come un "tipo", con gli __oggetti__ come una "variabile" di quel tipo. Si dice che una classe viene "istanziata" e un oggetto "creato" o "inizializzato".
 
 Esempio:
 ```
