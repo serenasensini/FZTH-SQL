@@ -4,8 +4,6 @@ Molte applicazioni richiedono di gestire collezioni di oggetti; gli array sono u
 Ci sono degli strumenti che sono stati introdotti a partire da Java 2 che hanno permesso di rappresentare altri tipi di strutture dati, come visibile nella figura seguente:
 ![Collections](http://fresh2refresh.com/wp-content/uploads/2013/08/Java-Framework.png)
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
-
 ## Cosa sono
 
 ## Come si usano
