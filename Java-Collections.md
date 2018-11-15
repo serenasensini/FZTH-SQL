@@ -4,6 +4,7 @@ Molte applicazioni richiedono di gestire collezioni di oggetti; gli array sono u
 
 ## Cosa sono
 Ci sono degli strumenti che sono stati introdotti a partire da Java 2 che hanno permesso di rappresentare altri tipi di strutture dati, come visibile nella figura seguente:
+
 ![Collections](http://fresh2refresh.com/wp-content/uploads/2013/08/Java-Framework.png)
 
 L'interface Collection dichiara i metodi di una generica collezione:
