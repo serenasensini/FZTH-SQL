@@ -1,6 +1,26 @@
 # Java_Tutorial
 
-Breve tutorial su ereditarietà, classi astratte, interfacce.
+## Classe
+Una classe è il prototipo (l'astrazione) di un oggetto in cui vengono definiti tutti gli attributi e le azioni che l'oggetto sarà in grado di compiere. Gli attributi possono essere di qualunque tipo di oggetto. Infatti, si dice che una classe  descrive un insieme di oggetti caratterizzati dallo stesso insieme di:
+- azioni possibili (metodi);
+- proprietà possibili (attributi o campi).
+
+## Oggetto
+Un oggetto di un tipo A ha:
+- uno stato descritto dai valori che attribuisce alle variabili dichiarate come attributi della sua classe
+- un comportamento dato dalle funzioni definite come metodi della sua classe
+- una identita', che rimane anche quando cambia stato, cioe' quando cambiano i valori alle variabili
+L'identita' di un oggetto è la posizione di memoria dove l'oggetto è memorizzato.
+
+## Classe vs. Oggetto
+Nella terminologia della programmazione orientata agli oggetti, una classe è un modello per la definizione di oggetti. Specifica i nomi e i tipi di variabili che possono esistere in un oggetto, così come i metodi. Una classe può essere pensata come un "tipo", con gli oggetti come una "variabile" di quel tipo. Si dice che una classe viene "istanziata" e un oggetto "creato" o "inizializzato".
+
+Esempio:
+```
+public class Auto{...} //definizione di una classe/tipo
+Auto a; //dichiarazione di un oggetto a di tipo Auto
+a = new Auto(); //inizializzazione dell'oggetto a di tipo Auto
+```
 
 ## Ereditarietà 
 E' uno dei concetti fondamentali nel paradigma di programmazione a oggetti. Permette di estendere classi esistenti, aggiungendo metodi e componenti. Se la classe B __eredita__ dalla classe A, si dice che B è una **sottoclasse** di A e che A è una **superclasse** di B. I due termini sono spesso sostituiti con i rispettivi figlio, padre, o classe estesa e classe base. L'ereditarietà è una relazione di generalizzazione su un certo oggetto: la superclasse definisce un concetto più generale, mentre la sottoclasse rappresenta una specifica  variante del concetto originale; questo tipo di relazione si chiama **is-a**.
