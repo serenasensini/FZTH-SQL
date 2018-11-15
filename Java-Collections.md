@@ -22,14 +22,12 @@ L'interface Collection dichiara i metodi di una generica collezione. Questi meto
 Codice dell'interfaccia Collection:
 ```
 public interface Collection<E> extends Iterable<E> {
-// Ope r a r igfaZYk]
 int size();
 boolean isEmpty();
 boolean contains(Object element);
 boolean add(E element); // O p tional
 boolean remove(Object element); // O p tional
 Iterator iterator();
-// Ope r aragfakmdd±afka]e]
 boolean containsAll(Collection<?> c);
 boolean addAll(Collection<? extends E> c); // Opt i onal
 boolean removeAll(Collection<?> c); // Opt i onal
@@ -38,8 +36,58 @@ void clear();
 ```
 
 ## Liste
+Le liste, rispetto agli insiemi, possono contenere elementi duplicati; oltre ai metodi dell'interfaccia, si hanno l'accesso posizionale, che permette di accedere agli elementi in base alla loro posizione nella lista (come se fosse un array), e permette la ricerca della posizione di un elemento nella lista.
+
+Esempio:
+```
+ArrayList<String> list=new ArrayList<String>();  
+list.add("Steve");
+list.add("Tim");
+list.add("Angela");
+list.add("Tom");
+
+//Print all elements
+System.out.println(alist);
+
+//Adding "Mark" at the fourth position
+list.add(3, "Mark");
+
+//Print all elements
+System.out.println(list);
+
+//Remove "Steve"
+list.remove("Steve");
+
+//Get last element
+list.get(list.size()-1);
+
+```
 
 ## Insiemi
+L'interface Set è una collezione che **non** può contenere duplicati.
+
+Esempio:
+```
+HashSet<String> set =  new HashSet<String>();
+
+// Adding elements to the HashSet
+set.add("Grape");
+set.add("Mango");
+set.add("Strawberrie");
+set.add("Orange");
+set.add("Fig");
+//Addition of duplicate element
+set.add("Mango");
+
+//Print all elements
+System.out.println(hset);
+
+//Remove element
+set.remove("Mango);
+
+//Print all elements
+System.out.println(hset);
+```
 
 ## Mappe
 L'interface Map offre le operazioni di un dizionario: una mappa è una collezione di coppie chiave-valore, e fornisce le seguenti operazioni:
