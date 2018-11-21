@@ -4,6 +4,10 @@
 "In informatica JDBC (Java DataBase Connectivity), è un connettore (driver) per database che consente l'accesso e la gestione della persistenza dei dati sulle basi di dati da qualsiasi programma scritto con il linguaggio di programmazione Java, indipendentemente dal tipo di DBMS utilizzato." (cfr. [Wikipedia.org](https://it.wikipedia.org/wiki/Java_DataBase_Connectivity))
 
 ## Come settarlo in Eclipse (molto simile per Intellij)
+Click destro sul progetto -> Properties -> Buildpath -> Libraries -> Add External JAR e selezionate “mysql-connector-java-5.1.14-bin.jar” JAR file dalla cartella in cui è stato scaricato.
+
+![Immagine](http://theopentutorials.com/totwp331/wp-content/uploads/jdbc-examples-introduction_2992/add-mysql-connector-eclipse.jpg)
+
 Seguire [questa](https://ibytecode.com/blog/jdbc-mysql-connection-tutorial/) guida.
 
 ## Come funziona
