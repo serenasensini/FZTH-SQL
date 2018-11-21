@@ -3,6 +3,9 @@
 ## JDBC: cos'è
 "In informatica JDBC (Java DataBase Connectivity), è un connettore (driver) per database che consente l'accesso e la gestione della persistenza dei dati sulle basi di dati da qualsiasi programma scritto con il linguaggio di programmazione Java, indipendentemente dal tipo di DBMS utilizzato." (cfr. [Wikipedia.org](https://it.wikipedia.org/wiki/Java_DataBase_Connectivity))
 
+## Come settarlo in Eclipse (molto simile per Intellij)
+1. 
+
 ## Come funziona
 
 Esempio:
@@ -105,7 +108,7 @@ public class Main {
 ```
 
 Link driver Java:
-[MySQL](https://dev.mysql.com/downloads/connector/j/)
+[MySQL](http://www.java2s.com/Code/Jar/c/Downloadcommysqljdbc515jar.htm)
 [SQLServer](https://docs.microsoft.com/it-it/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server?view=sql-server-2017)
 [Oracle](https://www.oracle.com/technetwork/database/application-development/jdbc/downloads/index.html)
 [PostgreSQL](https://jdbc.postgresql.org/)
