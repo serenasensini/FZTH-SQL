@@ -1,6 +1,8 @@
 # Java:Hibernate
 
-> Disclaimer: il tutorial usa MySQL come DBMS, ma si può applicare a qualunque DBMS. Si presuppone che quindi le ultime versioni di questo siano già installate prima dell'inizio del tutorial.
+> Disclaimer: il tutorial usa PostgreSQL come DBMS, ma si può applicare a qualunque DBMS. Si presuppone che quindi le ultime versioni di questo siano già installate prima dell'inizio del tutorial.
+
+> Requisiti: vedi contenuto pom.xml più avanti.
 
 ## Cos'è [?](https://hibernate.org/)
 Si tratta di un framework che fornisce un servizio di Object-relational mapping (ORM) ovvero gestisce la persistenza dei dati sul database attraverso la rappresentazione e il mantenimento su database relazionale di un sistema di oggetti Java.
@@ -128,6 +130,81 @@ Per far sì che avvenga il mapping tra l'entità nel database e il model nel cod
 Nel caso precedente, come DBMS viene utilizzato PostgreSQL, e di conseguenza la proprietà che riguarda il nome del driver e l'URL al database fanno riferimento a PostgreSQL. Le righe successive riguardano l'impostazione delle credenziali per accedere al database, rispettivamente user e password, mentre l'ultima configura Hibernate di modo da mostrare nella console di esecuzione di Java le query SQL eseguite.
 
 > Si rende comunque evidente che è molto semplice modificare quei parametri per qualunque tipo di DBMS, MySQL, SQLServer o DB2 che sia.
+
+### pom.xml (dipendenze)
+```
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.journaldev.hibernate</groupId>
+    <artifactId>hibernate-entitymanager</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>hibernate-entitymanager</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.2.6.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.2.11</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-core</artifactId>
+            <version>2.2.11</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-impl</artifactId>
+            <version>2.2.11</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <sourceDirectory>src/main/java</sourceDirectory>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+
+```
 
 ## Tips
 - [X] Cos'è il modello MVC? Vedi (link) [https://it.wikipedia.org/wiki/Model-view-controller]
