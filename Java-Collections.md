@@ -1,4 +1,4 @@
-# Java-Collections
+# Java:Collections
 
 Molte applicazioni richiedono di gestire collezioni di oggetti; gli array sono uno strumento di basso livello con molte limitazioni, come la dimensione della struttura e/o la ricerca non dinamica. Le Collections rappresentano gruppi di oggetti (elementi) che possono essere ordinati, duplicati e/o modificati.
 
