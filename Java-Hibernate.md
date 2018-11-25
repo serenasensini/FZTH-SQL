@@ -96,6 +96,39 @@ public class Utente {
 
 ```
 
+Per far sì che avvenga il mapping tra l'entità nel database e il model nel codice Java, si deve modificare il file persistence.xml, indicando come configurare i parametri di connessione; un esempio viene riportato qui di seguito.
+
+```
+
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+             version="2.1">
+
+    <persistence-unit name="persistence">
+        <description>Hibernate Entity Manager Example</description>
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL9Dialect" />
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/postgres" />
+            <property name="javax.persistence.jdbc.user" value="postgres" />
+            <property name="javax.persistence.jdbc.password" value="postgres" />
+            <property name="hibernate.show_sql" value="true" />
+        </properties>
+
+    </persistence-unit>
+
+</persistence>
+
+```
+
+Nel caso precedente, come DBMS viene utilizzato PostgreSQL, e di conseguenza la proprietà che riguarda il nome del driver e l'URL al database fanno riferimento a PostgreSQL. Le righe successive riguardano l'impostazione delle credenziali per accedere al database, rispettivamente user e password, mentre l'ultima configura Hibernate di modo da mostrare nella console di esecuzione di Java le query SQL eseguite.
+
+> Si rende comunque evidente che è molto semplice modificare quei parametri per qualunque tipo di DBMS, MySQL, SQLServer o DB2 che sia.
+
 ## Tips
 - [X] Cos'è il modello MVC? Vedi (link) [https://it.wikipedia.org/wiki/Model-view-controller]
 - [X] Cos'è il modello ORM? Vedi (link)[https://it.wikipedia.org/wiki/Object-relational_mapping]
