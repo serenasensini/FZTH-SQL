@@ -1,4 +1,4 @@
-# Tutorial sulle eccezioni in Java
+# Java:eccezioni
 
 ## Cosa sono
 
