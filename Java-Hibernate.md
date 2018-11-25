@@ -1,4 +1,4 @@
-# java:Hibernate
+# Java:Hibernate
 
 > Disclaimer: il tutorial usa MySQL come DBMS, ma si può applicare a qualunque DBMS. Si presuppone che quindi le ultime versioni di questo siano già installate prima dell'inizio del tutorial.
 
