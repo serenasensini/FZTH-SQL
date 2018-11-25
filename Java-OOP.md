@@ -1,4 +1,4 @@
-# Java_Tutorial
+# Java:OOP
 
 ## Classe
 Una __classe__ è il prototipo (l'astrazione) di un oggetto in cui vengono definiti tutti gli attributi e le azioni che l'oggetto sarà in grado di compiere. Gli attributi possono essere di qualunque tipo di oggetto. Infatti, si dice che una classe  descrive un insieme di oggetti caratterizzati dallo stesso insieme di:
