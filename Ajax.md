@@ -1,7 +1,7 @@
 # Ajax
 Asynchronous JavaScript and XML.
 
-## Cos'è
+## Cos'è [?](https://it.wikipedia.org/wiki/AJAX)
 
 AJAX non è un linguaggio di programmazione, ma una tecnica di sviluppo software. AJAX utilizza solo una combinazione di:
 - Un oggetto XMLHttpRequest incorporato nel browser (per richiedere dati da un server Web);
