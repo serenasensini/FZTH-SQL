@@ -1,3 +1,3 @@
-# Tutorial-From-zero-to-hero
+# Tutorial: from zero to hero
 
-Working in progress
+WIP
