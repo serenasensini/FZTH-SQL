@@ -214,7 +214,7 @@ Il JOIN è una clausola del linguaggio SQL che serve a combinare le tuple di due
 - RIGHT-JOIN: il risultato di una query right outer join per le tabelle contiene sempre tutti i record della tabella di destra ("right"), mentre vengono estratti dalla tabella di sinistra ("left") solamente le righe che trovano corrispondenza nella regola di confronto della join;
 - INNER-JOIN: questo tipo di clausola cerca di soddisfare la condizione in entrambe le tabelle, quindi confronta ogni riga della tabella a sinistra della join con ogni riga della tabella a destra; se la condizione è soddisfatta, allora la riga è aggiunta al risultato della query.
 
-(cfr. [Wikipedia](https://it.wikipedia.org/wiki/Join_(SQL))
+(cfr. [Wikipedia](https://it.wikipedia.org/wiki/Join_(SQL)))
 
 Sintassi:
 ```
@@ -303,7 +303,7 @@ FROM UTENTE
 
 ## Vista: CREATE
 ### Cos'è
-Una vista è rappresentata da una query, il cui risultato può essere utilizzato come se fosse una tabella, anche se in questo caso si ha una tabella virtuale e non fisica. Le viste generalmente vengono utilizzate per semplificare le query. Se il database è realmente relazionale, leggere un insieme di dati avente un significato potrebbe essere complesso, perché potrebbe richiedere eccessive JOIN fra tabelle; con una vista è possibile semplificare molto la stesura di query che leggono le informazioni. (cfr. [Wikipedia](https://it.wikipedia.org/wiki/Vista_(basi_di_dati))
+Una vista è rappresentata da una query, il cui risultato può essere utilizzato come se fosse una tabella, anche se in questo caso si ha una tabella virtuale e non fisica. Le viste generalmente vengono utilizzate per semplificare le query. Se il database è realmente relazionale, leggere un insieme di dati avente un significato potrebbe essere complesso, perché potrebbe richiedere eccessive JOIN fra tabelle; con una vista è possibile semplificare molto la stesura di query che leggono le informazioni. (cfr. [Wikipedia](https://it.wikipedia.org/wiki/Vista_(basi_di_dati)))
 
 Sintassi:
 ```
