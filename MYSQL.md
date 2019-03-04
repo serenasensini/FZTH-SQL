@@ -292,13 +292,17 @@ CALL GetAllUsers();
 ## Funzione: CREATE
 Sintassi:
 ```
-SELECT *
-FROM tabella
-```
+CREATE FUNCTION nome (param1, param2, ecc)
+    ISTRUZIONI SQL
+SELECT nome();
+
 Esempio: Selezionare tutti gli utenti dalla tabella "Utente"
 ```
-SELECT *
-FROM UTENTE
+CREATE FUNCTION hello (s CHAR(20))
+    RETURN CHAR(50) DETERMINISTIC
+    RETURN CONCAT('Hello, ',s,'!');
+
+SELECT hello('world');
 ```
 
 ## Vista: CREATE
